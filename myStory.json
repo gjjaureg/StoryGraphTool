@@ -12,13 +12,16 @@
                 },
                 {
                     "Text": "Window",
-                    "Target": "House"
+                    "Target": "Wall"
                 },
                 {
                     "Text": "Wallet",
                     "Target": "House"
                 }
             ]
+        },
+        "Wall":{
+            "Body":"The day looks just about over with the ssun setting in the far distance."
         },
         "MainChoice": {
             "Body": "For the main choice we have a McDonald's Deluxe McCrispy, a Wendy's Baconater, or a 10 piece bone in chicken wing combo from Wingstop. ",
