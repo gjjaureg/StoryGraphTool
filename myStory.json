@@ -1,58 +1,80 @@
 {
-    "Title": "Campus Life on the West Side",
-    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
-    "InitialLocation": "Kresge",
+    "Title": "Fast Food Adventure",
+    "Credits": "Created by Gabriel Jauregui (gjjaureg@ucsc.edu).",
+    "InitialLocation": "Home",
     "Locations": {
-        "Kresge": {
-            "Body": "This is Kresge College, lots of nice trees.",
+        "House": {
+            "Body": "You really feal like eating some fast food right now so you decide to treat yourself to some fast food but you decide to mix and match your meals today satrting with the main dish",
             "Choices": [
                 {
-                    "Text": "South",
-                    "Target": "Porter"
+                    "Text": "To the first choice.",
+                    "Target": "MainChoice"
+                },
+                {
+                    "Text": "Wallet",
+                    "Body":"definetley can't forget this, how else are you suppose to get pay for food.",
+                    "Target": "House"
+                },
+                {
+                    "Text": "10 Piece Wing Meal (Lemon-Pepper)",
+                    "Body": "it's getting pretty dark out better get some food now.",
+                    "Target": "House"
                 }
             ]
         },
-        "Porter": {
-            "Body": "This is Porter College, the trees are nice here too.",
+        "MainChoice": {
+            "Body": "For the main choice we have a McDonald's Deluxe McCrispy, a Wendy's Baconater, or a 10 piece bone in chicken wing combo from Wingstop. ",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Kresge"
+                    "Text": "Deluxe McCrispy",
+                    "Target": "SideChoice"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Rachel Carson"
+                    "Text": "Baconater",
+                    "Target": "SideChoice"
+                },
+                {
+                    "Text": "10 piece bone in chicken wing combo",
+                    "Target": "SideChoice"
                 }
             ]
         },
-        "Rachel Carson": {
-            "Body": "Rachel Carson College, more sun and fewer trees.",
+        "SideChoice": {
+            "Body": "For sides we have Jack in the Box curly fries, In and Out animal style fries, or Canes butter bread.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Porter"
+                    "Text": "curly fries",
+                    "Target": "DrinkChoice"
                 },
                 {
-                    "Text": "South",
-                    "Target": "Oakes"
+                    "Text": "animal style fries",
+                    "Target": "DrinkChoice"
+                },
+                {
+                    "Text": "butter bread",
+                    "Target": "DrinkChoice"
                 }
             ]
         },
-        "Oakes": {
-            "Body": "Oakes College, even the buildings have tree bark on them.",
+        "DrinkChoice": {
+            "Body": "Finally for a choice of drinks we have Chick-Fil-A sunjoy, Taco Bell baja blast, or a Starbucks dragon drink.",
             "Choices": [
                 {
-                    "Text": "North",
-                    "Target": "Rachel Carson"
+                    "Text": "sunjoy",
+                    "Target": "Beyond"
                 },
                 {
-                    "Text": "South",
+                    "Text": "baja blast",
+                    "Target": "Beyond"
+                },
+                {
+                    "Text": "dragon drink",
                     "Target": "Beyond"
                 }
             ]
         },
         "Beyond": {
-            "Body": "Grass, don't forget to check for ticks!"
+            "Body": "Great you have ordered..."
         }
     }
 }

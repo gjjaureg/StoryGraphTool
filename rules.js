@@ -1,12 +1,5 @@
 class Start extends Scene {
     create() {
-        //console.log(this.engine.storyData)
-        //console.log(this.engine.storyData.Locations.Kresge.Choices[0].Target);
-
-        //const key = "Kresge"
-        //console.log(this.engine.storyData.Locations[key].Body)
-
-
         this.engine.setTitle(this.engine.storyData.Title); // TODO: replace this text using this.engine.storyData to find the story title
         this.engine.addChoice("Begin the story");
     }
