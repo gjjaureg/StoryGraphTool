@@ -37,6 +37,51 @@ class Location extends Scene {
         if (myStrory.json.Wallet === false){
            this.engine.gotoScene(Location, myStrory.json.House)
         }
+        if (this.engine.choice === "Deluxe McCrispy"){
+            this.engine.show(locationData.DMC),
+            myStory.json.DMC = false
+        }
+        if (this.engine.choice === "Baconater"){
+            this.engine.show(locationData.BA),
+            myStory.json.BA = false
+        }
+        if (this.engine.choice === "10 Piece Chicken Wing Meal (Lemon-Pepper)"){
+            this.engine.show(locationData.tenP),
+            myStory.json.tenP = false
+        }
+        if (this.engine.choice === "Curly Fries"){
+            this.engine.show(locationData.CF),
+            myStory.json.CF = false
+        }
+        if (this.engine.choice === "Animal Style Fries"){
+            this.engine.show(locationData.ASF),
+            myStory.json.ASF = false
+        }
+        if (this.engine.choice === "Butter Bread"){
+            this.engine.show(locationData.BB),
+            myStory.json.BB = false
+        }
+        if (this.engine.choice === "Sunjoy"){
+            this.engine.show(locationData.SJ),
+            myStory.json.SJ = false
+        }
+        if (this.engine.choice === "Baja Blast"){
+            this.engine.show(locationData.BB),
+            myStory.json.BABL = false
+        }
+        if (this.engine.choice === "Dragon Drink"){
+            this.engine.show(locationData.DD),
+            myStory.json.DD = false
+        }
+        if (myStrory.json.DD === false, myStrory.json.BABL === false, myStrory.json.DMC === false){
+            this.engine.show(locationData.Combo)
+        }
+        if (myStrory.json.tenP === false, myStrory.json.ASF === false, myStrory.json.SJ === false){
+            this.engine.show(locationData.Combo)
+        }
+        if (myStrory.json.BA === false, myStrory.json.CF === false, myStrory.json.BB === false){
+            this.engine.show(locationData.Combo)
+        }
     }
 }
 

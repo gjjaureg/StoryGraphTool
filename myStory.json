@@ -11,11 +11,11 @@
                     "Target": "MainChoice"
                 },
                 {
-                    "Text": "Wallet",
+                    "Text": "Window",
                     "Target": "House"
                 },
                 {
-                    "Text": "window",
+                    "Text": "Wallet",
                     "Target": "House"
                 }
             ]
@@ -32,7 +32,7 @@
                     "Target": "SideChoice"
                 },
                 {
-                    "Text": "10 Piece Wing Meal (Lemon-Pepper)",
+                    "Text": "10 Piece Chicken Wing Meal (Lemon-Pepper)",
                     "Target": "SideChoice"
                 }
             ]
@@ -41,15 +41,15 @@
             "Body": "For sides we have Jack in the Box curly fries, In and Out animal style fries, or Canes butter bread.",
             "Choices": [
                 {
-                    "Text": "curly fries",
+                    "Text": "Curly Fries",
                     "Target": "DrinkChoice"
                 },
                 {
-                    "Text": "animal style fries",
+                    "Text": "Animal Style Fries",
                     "Target": "DrinkChoice"
                 },
                 {
-                    "Text": "butter bread",
+                    "Text": "Butter Bread",
                     "Target": "DrinkChoice"
                 }
             ]
@@ -58,21 +58,31 @@
             "Body": "Finally for a choice of drinks we have Chick-Fil-A sunjoy, Taco Bell baja blast, or a Starbucks dragon drink.",
             "Choices": [
                 {
-                    "Text": "sunjoy",
+                    "Text": "Sunjoy",
                     "Target": "Beyond"
                 },
                 {
-                    "Text": "baja blast",
+                    "Text": "Baja Blast",
                     "Target": "Beyond"
                 },
                 {
-                    "Text": "dragon drink",
+                    "Text": "Dragon Drink",
                     "Target": "Beyond"
                 }
             ]
         },
         "Beyond": {
-            "Body": "Great you have ordered..."
+            "Body": " Great you have ordered... ",
+            "DMC": " A Deluxe McCrispy ",
+            "BA": " A Baconater ",
+            "tenP": " A 10 Piece Chicken Wing Meal (Lemon-Pepper) ",
+            "CF": " Curly Fries ",
+            "ASF":" Animal Style Fries ",
+            "BB":" Butter Bread ",
+            "SJ":" and a Sunjoy ",
+            "BABL":" and a Baja Blast ",
+            "DD":" and a Dragon Drink ",
+            "Combo": " AMAZING COMBO "
         }
     }
 }
