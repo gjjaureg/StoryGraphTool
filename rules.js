@@ -31,6 +31,12 @@ class Location extends Scene {
         } else {
             this.engine.gotoScene(End);
         }
+        if (this.engine.choice === "Wallet"){
+            myStory.json.Wallet = true
+        }
+        if (myStrory.json.Wallet === false){
+           this.engine.gotoScene(Location, myStrory.json.House)
+        }
     }
 }
 

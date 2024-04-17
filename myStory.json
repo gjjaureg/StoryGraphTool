@@ -1,7 +1,7 @@
 {
     "Title": "Fast Food Adventure",
     "Credits": "Created by Gabriel Jauregui (gjjaureg@ucsc.edu).",
-    "InitialLocation": "Home",
+    "InitialLocation": "House",
     "Locations": {
         "House": {
             "Body": "You really feal like eating some fast food right now so you decide to treat yourself to some fast food but you decide to mix and match your meals today satrting with the main dish",
@@ -12,12 +12,10 @@
                 },
                 {
                     "Text": "Wallet",
-                    "Body":"definetley can't forget this, how else are you suppose to get pay for food.",
                     "Target": "House"
                 },
                 {
-                    "Text": "10 Piece Wing Meal (Lemon-Pepper)",
-                    "Body": "it's getting pretty dark out better get some food now.",
+                    "Text": "window",
                     "Target": "House"
                 }
             ]
@@ -34,7 +32,7 @@
                     "Target": "SideChoice"
                 },
                 {
-                    "Text": "10 piece bone in chicken wing combo",
+                    "Text": "10 Piece Wing Meal (Lemon-Pepper)",
                     "Target": "SideChoice"
                 }
             ]
