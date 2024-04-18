@@ -31,55 +31,58 @@ class Location extends Scene {
         } else {
             this.engine.gotoScene(End);
         }
-        if (this.engine.choice === "Wallet"){
-            myStory.json.Wallet = true
+        if (choice === "Wallet"){
+            this.engine.myStory.Locations.Choice.Wallet = 'true'
         }
-        if (myStrory.json.Wallet === false){
-           this.engine.gotoScene(Location, myStrory.json.House)
+        else {
+            this.engine.myStory.Location.Choice.Wallet = 'false'
+        }
+        if (myStrory.json.Wallet === 'false'){
+           this.engine.gotoScene(Location, this.engine.myStory.Location.House)
         }
         if (this.engine.choice === "Deluxe McCrispy"){
-            this.engine.show(locationData.DMC),
-            myStory.json.DMC = false
+            this.engine.show(this.engine.storyData.Locations.Beyond.DMC),
+            myStory.json.DMC = 'false'
         }
         if (this.engine.choice === "Baconater"){
             this.engine.show(locationData.BA),
-            myStory.json.BA = false
+            myStory.json.BA = 'false'
         }
         if (this.engine.choice === "10 Piece Chicken Wing Meal (Lemon-Pepper)"){
             this.engine.show(locationData.tenP),
-            myStory.json.tenP = false
+            myStory.json.tenP = 'false'
         }
         if (this.engine.choice === "Curly Fries"){
             this.engine.show(locationData.CF),
-            myStory.json.CF = false
+            myStory.json.CF = 'false'
         }
         if (this.engine.choice === "Animal Style Fries"){
             this.engine.show(locationData.ASF),
-            myStory.json.ASF = false
+            myStory.json.ASF = 'false'
         }
         if (this.engine.choice === "Butter Bread"){
             this.engine.show(locationData.BB),
-            myStory.json.BB = false
+            myStory.json.BB = 'false'
         }
         if (this.engine.choice === "Sunjoy"){
             this.engine.show(locationData.SJ),
-            myStory.json.SJ = false
+            myStory.json.SJ = 'false'
         }
         if (this.engine.choice === "Baja Blast"){
             this.engine.show(locationData.BB),
-            myStory.json.BABL = false
+            myStory.json.BABL = 'false'
         }
         if (this.engine.choice === "Dragon Drink"){
             this.engine.show(locationData.DD),
-            myStory.json.DD = false
+            myStory.json.DD = 'false'
         }
-        if (myStrory.json.DD === false, myStrory.json.BABL === false, myStrory.json.DMC === false){
+        if (myStrory.json.DD === 'false', myStrory.json.BB === 'false', myStrory.json.DMC === 'false'){
             this.engine.show(locationData.Combo)
         }
-        if (myStrory.json.tenP === false, myStrory.json.ASF === false, myStrory.json.SJ === false){
+        if (myStrory.json.tenP === 'false', myStrory.json.ASF === 'false', myStrory.json.SJ === 'false'){
             this.engine.show(locationData.Combo)
         }
-        if (myStrory.json.BA === false, myStrory.json.CF === false, myStrory.json.BB === false){
+        if (myStrory.json.BA === 'false', myStrory.json.CF === 'false', myStrory.json.BABL === 'false'){
             this.engine.show(locationData.Combo)
         }
     }

@@ -12,11 +12,20 @@
                 },
                 {
                     "Text": "Window",
-                    "Target": "House"
+                    "Target": "Wall"
                 },
                 {
                     "Text": "Wallet",
                     "Target": "House"
+                }
+            ]
+        },
+        "Wall":{
+            "Body":"You look outside and see the sun setting in the distance you should go get some food soon",
+            "Choices": [
+                {
+                    "Text":"Go Back",
+                    "Target":"House"
                 }
             ]
         },
